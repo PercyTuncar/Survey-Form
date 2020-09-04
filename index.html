@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CodeNight - Form</title>
+</head>
+<body>
+    <h1 id="title">CodeNight - Survey Form</h1>
+    <p  id="description"> Este formulario es para obtener suscriptores</p>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Nombre</label>
+        <input type="text" id="name" placeholder="Name" required>
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Email" required>
+
+        <label for="number" id="number-label">Edad</label>
+        <input type="number" name=""  placeholder="Edad"  id="number" min="1" max="80" >
+
+       <div class="level">
+        <label for="dropdown">Selecciona tu nivel:</label>
+        <select name="level" id="dropdown">
+          <option value="volvo">Basic</option>
+          <option value="saab">Intermedio</option>
+          <option value="mercedes">Avanzado</option>
+        </select> 
+       </div>
+
+       <div class="radio">
+        <label for="m"><input id="m" type="radio" name="indoor-outdoor" value="m"> M</label>
+        <label for="f"><input id="f" type="radio" name="indoor-outdoor" value="f"> F</label><br>
+       </div>
+
+       <div class="check">
+    <label for="dia"><input id="dia" type="checkbox" name="personality" value="dia"> dia</label>
+    <label for="noche"><input id="noche" type="checkbox" name="personality" value="noche"> noche</label>
+       </div>
+       
+   <div>
+    <textarea id="review" name="review" rows="4" cols="50">
+    </textarea> 
+   </div>
+<div>
+  <button  id="submit">Enviar</button>
+</div>
+    </form>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
